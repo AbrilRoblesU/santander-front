@@ -28,9 +28,11 @@ button {
 }
 
 .header {
-    margin-top: 40px;
+    /*margin-top: 40px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px;*/
+    margin: 40px 20px 0 20px;
+    font-size: 0;
 }
 
 li {
@@ -42,6 +44,10 @@ a aplicar este diseño (Ej. la li de la ul del menú de nav)
 Selectores combinados, el > significa que te vas a mover hacia a un lado */
 .header > * {
     display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
 }
 
 .logo {
@@ -49,9 +55,13 @@ Selectores combinados, el > significa que te vas a mover hacia a un lado */
 }
 
 .navbar {
-    
+    width: 70%;
+    text-align: center;
+    color: green;
 }
 
 .actions {
-    
+    width: 15%;
+    text-align: center;
+    font-size: 14px;
 }
