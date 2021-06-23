@@ -1,156 +1,317 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+/**********  Imports          **********/
+@import url(https://fonts.googleapis.com/css?family=Lobster);   /*Advertising font*/
+
+
+/**********  Generic classes  **********/ 
+* {
+    box-sizing: border-box;
+    margin:     0;
+    padding:    0;
+}
 
 body {
     background-color: #fffbf7;
-    /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');*/
+    font-family:      "Open Sans", sans-serif;
 }
 
+main {
+    margin-top: 285px;
+    text-align: center;
+}
+
+button {
+    background-color: #025157;
+    border:           0;
+    border-radius:    5px;
+    color:            white;
+    padding:          12px 14px;
+}
+
+li {
+    display: inline;
+    margin:  0 5px;
+}
+
+/*           Restos BEDU S1            */
 h1 {
-    color:aquamarine;
-    size: 25px;
+    color: #025157;
 }
 
 h2 {
     color: #46484c;
 }
 
-b {
-    color: #8b8b8bcc;
-}
-
 p {
     color: #8b8b8bcc;
-    font-family: verdana;
-    font-size: 20px;
 }
 
-button {
-    color: #fff;
-    background-color: #67b54b;
-}
 
+/**********  Header           **********/ 
 .fixed-header {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: fffbf7;
+    left:             0;
+    position:         fixed;
+    right:            0;
+    top:              0;
 }
 
 .header {
-    margin: 40px 20px 0 20px;
-    font-size: 0;
+    font-size:    0;
+    height:       45px;
+    margin:       20px 20px 0 20px;
+    /*margin-top:   40px;
+    margin-left:  20px;
+    margin-right: 20px;*/
+    
 }
 
-li {
-    display: inline;
-}
-
-/* Todos los hijos que tenga la clase header, le va
-a aplicar este diseño (Ej. la li de la ul del menú de nav)
-Selectores combinados, el > significa que te vas a mover hacia a un lado */
-/* alto de barra = line-height */
 .header > * {
-    display: inline-block;
-    font-size: 16px;
+    display:        inline-block;
+    font-family:    sans-serif;
+    font-size:      16px;
+    height:         45px;   /* 100% */
+    line-height:    45px;
     vertical-align: middle;
-    height: 45px;
-    line-height: 45px;
-    font-family: sans-serif;
 }
 
 .logo {
     width: 15%;
 }
 
-.navbar {
-    width: 70%;
-    text-align: center;
-    color: #025157;
-}
-
-.navbar > *{
-    margin-left: 25px;
-    margin-right: 25px;
+.logo > img {
+    height: 100%;
 }
 
 .actions {
-    width: 15%;
-    text-align: right; 
-    font-size: 14px;   
+    font-size:   14px;
+    font-weight: 600;
+    text-align:  right;
 }
 
-.actions > *{
-    margin-left: 10px;
+.actions > * {
     margin-right: 10px;
+    margin-left:  10px;
 }
-
+  
 .actions a {
     color: #67b54b;
 }
 
 .actions button {
-    color: white;
     background-color: #67b54b;
-    border: 0;
-    border-radius: 5px;
-    padding: 12px 14px 12px 14px;
+    border:           0;
+    border-radius:    5px;
+    color:            white;
+    height:           50px;
+    padding:          12px 14px;
 }
 
+/*           Nav-menu            */
+.navbar {
+    color:       #025157;
+    font-weight: 500;
+    text-align:  center;
+    width:       70%;
+}
+
+.navbar > *{
+    margin-right: 25px;
+    margin-left:  25px;
+}
+
+
+/**********  Main-content     **********/
+
+/**********  Advertising      **********/
 .promo {
-    display: flex;
-    width: 70%;
-    margin: 100px auto;
     align-items: center;
+    display:     flex;
+    margin:      100px auto;
+    max-width:   70%;
+    width:       70%;
 }
 
-.video-adv {
-    display: flex;
+.explanatory-video {
+    align-items:    center;
+    display:        flex;
+    flex:           1;
     flex-direction: column;
-    align-items: center;
-    margin-right: 50px;
+    margin-right:   30px;
+}
+  
+.explanatory-video img {
+    margin-top: 10px;
+    width:      120px;
 }
 
-.video-adv img {
-    width: 150px;
-    margin-top: 15px;
+.advertising {
+    flex: 1;
 }
 
-.advertising{
+.advertising h2 {
+    color:         #025157;
+    font-family:   "Lobster", cursive;
+    font-size:     60px;
+    line-height:   48px;
+    margin-top:    20px;
+    margin-bottom: 20px;
 }
 
-.advertising > h2 {
-    font-family: "Lobster", cursive;
-    font-size: 45px;
-    line-height: 45px;
-    color: #025157;
+.advertising h3 {
+    color:         #025157;
+    font-family:   "Lobster", cursive;
+    font-size:     45px;
+    line-height:   48px;
+    margin-top:    20px;
+    margin-bottom: 20px;
 }
 
 .advertising > p {
-    font-size: 18px;
-    color: #343434;
-    line-height: 1.5;
+    color:         #343434;
+    font-size:     16px;
+    line-height:   1.5;
+    margin-bottom: 20px;
 }
 
-.advertising form {
+.advertising > form {
     display: flex;
 }
 
 .advertising > form p {
-    font-size: 18px;
-    color: #025157;
+    color:        #025157;
+    margin-right: 18px;
+}
+
+
+/**********  Success stories  **********/
+.success-stories {
+    align-items:      center;
+    background-color: #a1d683;
+    display:          flex;
+    justify-content:  space-around;
+    padding:          5% 15%;
+}
+
+.success-stories .overview {
+    flex: 2;
+    padding:        0 75px;
+}
+
+.success-stories .stories {
+    align-items:      center;
+    background-color: #fff;
+    border-radius:    10px;
+    display:          flex;
+    flex-direction:   column;
+    max-width:        370px;
+    width:            100%;
+}
+
+.success-stories .stories .card-media{
+    position: relative;
+}
+
+.success-stories .stories .card-media .card-logo {
+    align-items:      center;
+    background-color: #f9da73;
+    border-radius:    50%;
+    bottom:           -25px;
+    display:          flex;
+    position:         absolute;
+    right:            15px;
+    width:            100px;
+    height:           100px;
+}
+
+.success-stories .stories .card-info,
+.success-stories .stories .card-submit {
+    padding: 20px;
+}
+
+.success-stories .stories .card-info .card-results {
+    align-items:  center;
+    color:        #828282;
+    display:      flex;
+}
+
+.success-stories .stories .card-submit {
+    background-color: unset;
+    border-top:       unset;
+    margin-bottom:    20px;
+}
+
+/*           Lado izquierdo            */
+.success-stories .overview h2 {
+    color:       #025157;
+    font-family: "Lobster", cursive;
+    font-size:   50px;
+    line-height: 48px;
+    margin-top:  20px;
+}
+
+.success-stories .overview p {
+    color:       #343434;
+    font-size:   18px;
+    line-height: 1.5;
+    margin-top:  20px;
+}
+
+.success-stories .overview button {
+    border-radius: 7px;
+    font-size:     14px;
+    font-weight:   550;
+    height:        50px;
+    margin:        20px 0;
+}
+
+.success-stories .overview img {
+    margin-top: 15px;
+    width:      500px;
+}
+
+/*           Lado derecho              */
+.success-stories .stories .card-media figure{
+    margin-top: 0;
+}
+
+.success-stories .stories .card-media img{
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+    max-height:              16vw;
+    width:                   100%;
+}
+
+.success-stories .stories .card-media .card-logo img{
+    max-width: 75%;
+}
+
+.success-stories .card-info h4 {
+    color:       #025157;
+    font-size:   18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin:      20px 0;
+}
+
+.success-stories .card-info h3 {
+    font-size:   20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin:      20px 0;
+}
+
+.success-stories .stories .card-info .card-results img {  
     margin-right: 20px;
+    width:        30px;
 }
 
-.advertising > form input {
-    font-family: verdana;
-    font-size: 14px;   
+.success-stories .card-submit button{
+    border-radius: 7px;
+    font-size:     16px;
+    font-weight:   550;
+    height:        60px;
+    margin:        20px 0;
+    width:         200px
 }
 
-.advertising button {
-    color: white;
-    background-color: #025157;
-    border: 0;
-    border-radius: 5px;
-    /*padding: 12px 14px 12px 14px;*/
-}
+/**********  Footer           **********/ 

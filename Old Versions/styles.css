@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+body {
+    background-color: #fffbf7;
+    /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');*/
+}
+
+h1 {
+    color:aquamarine;
+    size: 25px;
+}
+
+h2 {
+    color: #46484c;
+}
+
+b {
+    color: #8b8b8bcc;
+}
+
+p {
+    color: #8b8b8bcc;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+button {
+    color: #fff;
+    background-color: #67b54b;
+}
+
+.fixed-header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header {
+    margin: 40px 20px 0 20px;
+    font-size: 0;
+}
+
+li {
+    display: inline;
+}
+
+/* Todos los hijos que tenga la clase header, le va
+a aplicar este diseño (Ej. la li de la ul del menú de nav)
+Selectores combinados, el > significa que te vas a mover hacia a un lado */
+/* alto de barra = line-height */
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 45px;
+    line-height: 45px;
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 15%;
+}
+
+.navbar {
+    width: 70%;
+    text-align: center;
+    color: #025157;
+}
+
+.navbar > *{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.actions {
+    width: 15%;
+    text-align: right; 
+    font-size: 14px;   
+}
+
+.actions > *{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 14px 12px 14px;
+}
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.video-adv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.video-adv img {
+    width: 150px;
+    margin-top: 15px;
+}
+
+.advertising{
+}
+
+.advertising > h2 {
+    font-family: "Lobster", cursive;
+    font-size: 45px;
+    line-height: 45px;
+    color: #025157;
+}
+
+.advertising > p {
+    font-size: 18px;
+    color: #343434;
+    line-height: 1.5;
+}
+
+.advertising form {
+    display: flex;
+}
+
+.advertising > form p {
+    font-size: 18px;
+    color: #025157;
+    margin-right: 20px;
+}
+
+.advertising > form input {
+    font-family: verdana;
+    font-size: 14px;   
+}
+
+.advertising button {
+    color: white;
+    background-color: #025157;
+    border: 0;
+    border-radius: 5px;
+    /*padding: 12px 14px 12px 14px;*/
+}

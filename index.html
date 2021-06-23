@@ -4,86 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Matcha</title>
+    <!-- Css file -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-
-    <section class="fixed-header"></section>
+    
+    <section class="fixed-header">
         <header class="header">
-            <!-- Logo -->
-            <a href="./index.html" class="logo">
-                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Logo">
+        <!-- Logo con link a la página principal -->
+            <a href="./index.html" class="header-logo">
+                <img 
+                    src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+                    alt="Matcha-logo"
+                >
             </a>
-            <!-- Menu navegacion -->
+            <!-- Menú de navegación -->
             <nav class="navbar">
                 <ul>
-                <li> Platform </li>
-                <li> Pricing </li>
-                <li> Customers </li>
-                <li> Resources </li>
-                <li> About </li>
+                    <li> Platform </li>
+                    <li> Pricing </li>
+                    <li> Customers </li>
+                    <li> Resources </li>
+                    <li> About </li>
                 </ul>
             </nav>
-            <!-- Sign in -->
+            <!-- Contenedor de acciones de usuario -->
             <div class="actions">
                 <a href="/login"> Sign in </a>
-                <button type="submit"> Start free trial </button>
+                    <button> Start free trial </button>
             </div>
         </header>
     </section>
 
-    <h1>Etiqueta nivel 1</h1>
-    <h2>Etiqueta nivel 2</h2>
-    <h3>Etiqueta nivel 3</h3>
-    <h4>Etiqueta nivel 4</h4>
-    <h5>Etiqueta nivel 5</h5>
-    <h6>Etiqueta nivel 6</h6>
-
-    <p>
-        <b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit. In et leo lorem. Phasellus 
-        laoreet fringilla odio, quis mollis nunc pharetra lobortis. Aliquam quis aliquet justo, 
-        in aliquam urna.
-        <br /><br />
-        Cras vitae fermentum mi. Cras sed viverra purus. Fusce enim orci, rutrum 
-        id purus vitae, sollicitudin cursus magna. Morbi dapibus in libero quis gravida.
-        <br /><br />
-        Donec suscipit commodo orci, et hendrerit mi eleifend eget. Nam auctor sodales mi, 
-        vitae efficitur mauris rutrum sit amet.
-    </p>
-
-    <!-- Sólo toma el espacio que necesita -->
-    <!-- Ctrl + shift + 7 = comenta todo lo que está seleccionado -->
-    <!-- <input type="text" placeholder="Escribe algo"> -->
-    <!-- <input type="email" name="email" id="" placeholder="email"> -->
-
-    <form action="">
-        <input type="text" placeholder="Nombre"> <br/>
-        <input type="text" placeholder="Apellido"> <br/>
-        <input type="number" name="edad" id="edad" placeholder="Edad"> <br/>
-        <input type="email" placeholder="Email"><br />
-        <input type="password" name="pass" placeholder="Contraseña"><br />
-
-        <button type="submit"> Enviar &rarr;</button>
-    </form>
-
-    <br />
-    <img src="Imagenes/puppy.jpg" alt="Un perrito" width="200">
-
-    <!--
-    <article>
-        <h2>Build your blog. Build your business</h2>
-        <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</p>
-        <input type="email" placeholder="Enter email address" name="emailTrial" id="emailTrial">
-        <input type="submit" value="Try it now">
-    </article> -->
-
-    <!-- Contenedor de publicidad 2 -->
     <section class="promo">
+        <!-- Contenedor publicidad -->
+        <article class="advertising">
+            <h2>Build your blog. Build your business.</h2>
+            <p>
+                Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.
+            </p>
+            <input type="email" name="" id="" placeholder="Enter email address">
+            <button>Try it now &rarr;</button>
+            <!-- img -->
+        </article>
+    </section>
 
-        <article class="video-adv">
+    <!-- Sesion 1, reto 1-3 -->
+    <section>
+        <h1>Encabeazado nivel 1</h1>
+        <h2>Encabeazado nivel 2</h2>
+        <h3>Encabeazado nivel 3</h3>
+        <h4>Encabeazado nivel 4</h4>
+        <h5>Encabeazado nivel 5</h5>
+        <h6>Encabeazado nivel 6</h6>
+        <br>
+        <p>
+            <b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit. 
+            Fuga dolorum expedita veritatis veniam nulla, facere 
+            accusantium incidunt culpa optio ea ipsum dolorem error 
+            delectus. Earum modi minima distinctio dignissimos aliquid.
+        </p>
+        <br>
+        <form action="">
+            <input type="text" placeholder="Nombre"> <br/>
+            <input type="text" placeholder="Apellido"> <br/>
+            <input type="number" name="edad" id="edad" placeholder="Edad"> <br/>
+            <input type="email" placeholder="Email"><br />
+            <input type="password" name="pass" placeholder="Contraseña"><br />
+
+            <button type="submit"> Enviar &rarr;</button>
+        </form>
+    </section>
+
+    <!-- Sesion 1, reto 4 -->
+    <figure>
+        <img 
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png"
+            alt="Capterra"
+        >
+    </figure>
+
+
+    <section class="promo">
+        <!-- Contenedor video y explicación -->
+        <article class="explanatory-video">
             <video
                 controls
                 poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
@@ -97,27 +103,85 @@
                     src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
                 />
             </video>
-
             <img 
                 src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" 
                 alt="See how it works"
             >
         </article>
-
+        <!-- Contenedor publicidad -->
         <article class="advertising">
-            <h2>Publish to your blog in minutes, not hours.</h2>
+            <h3>
+                Publish to your blog in minutes, not hours.
+            </h3>
             <p>
                 Your blog is your most powerful asset to build, engage, and retain a loyal audience. 
                 But you don’t have hours to create content that may or may not work. With Matcha, 
                 instantly publish from our library of 10,000+ professionally written articles and 
                 build your email list faster with our powerful conversion tool.
             </p>
-
             <form action="">
                 <p>Start publishing today:</p>
-                <input type="email" placeholder="Enter email" name="emailTrial" id="emailTrial">
-                <button>Try it now</button>
+                <input type="email" name="" id="" placeholder="Enter email">
+                <button>Start my trial</button>
             </form>
+        </article>
+    </section>
+
+
+    <section class="success-stories">
+        <!-- Seccion informativa -->
+        <article class="overview">
+            <h2>Growing ecommerce brands rely on Matcha.</h2>
+            <p>
+                Are you tired of wasting time publishing blog articles to only see 
+                a trickle of traffic and no impact on sales? Join hundreds of 
+                business owners and ecommerce marketers who rely on 
+                Matcha for quality content and consistent performance from their blogs.
+            </p>
+            <button>Who Uses Matcha?</button>
+            <img 
+                src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png"
+                alt="Brands"
+            >
+        </article>
+
+        <!-- Seccion mutimedia -->
+        <article class="stories">
+            <!-- Contenedor imagenes -->
+            <div class="card-media">
+                <figure>
+                    <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg"
+                        alt="Seato Summit worker"
+                    />
+                </figure>
+                <div class="card-logo">
+                    <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png"
+                        alt="Seato Summit Logo"
+                    />
+                </div>
+            </div>
+            <!-- Contenedor texto -->
+            <div class="card-info">
+                <h4>Sea to Summit</h4>
+                <h3>
+                    Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New Subscribers 820%
+                </h3>
+                <div class="card-results">
+                    <img
+                        src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png"
+                        alt="Audience icon"
+                    />
+                    <p>
+                        500% increase in traffic from social media
+                    </p>
+                </div>
+            </div>
+            <!-- Contenedor boton -->
+            <div class="card-submit">
+                <button>See Case Study</button>
+            </div>
         </article>
     </section>
 
