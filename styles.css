@@ -4,35 +4,62 @@
 
 /**********  Generic classes  **********/ 
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;
     margin:     0;
-    padding:    0;
-}
-
-body {
-    background-color: #fffbf7;
-    font-family:      "Open Sans", sans-serif;
+    padding:    0;*/
 }
 
 main {
-    margin-top: 285px;
-    text-align: center;
+    /*margin-top: 285px;
+    text-align: center;*/
+}
+
+body {
+    background-color:         #fffbf7;
+    font-family: 'Open sans', sans-serif;
+}
+
+h1 {
+    color:         #025157;
+    font-family:   "Lobster", cursive;
+    font-size:     60px;
+    line-height:   48px;
+    margin-top:    150px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color:         #025157;
+    font-family:   "Lobster", cursive;
+    font-size:     44px;
+    line-height:   40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color:         #025157;
+    font-family:   "Lobster", cursive;
+    font-size:     38px;
+    line-height:   40px;
+    margin-bottom: 20px;
 }
 
 button {
     background-color: #025157;
-    border:           0;
+    border:           none;
     border-radius:    5px;
     color:            white;
-    padding:          12px 14px;
+    font-size:        14px;
+    height:           50px;
+    padding:          15px 20px;
 }
 
 li {
     display: inline;
-    margin:  0 5px;
 }
 
-/*           Restos BEDU S1            */
+/*           Retos BEDU S1            */
+/*
 h1 {
     color: #025157;
 }
@@ -44,11 +71,34 @@ h2 {
 p {
     color: #8b8b8bcc;
 }
+*/
+
+/*           Reto 2 BEDU S4            */
+.features-reto2 {
+    display: grid;
+    /*grid-template-columns: 300px 300px;*/
+    /*grid-template-columns: repeat(2, 300px);*/
+    /*grid-template-columns: 500px 1fr;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    
+    /* Reto 3.1 */
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:    repeat(2, 330px) */
+    /* Reto 3.2 */
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+}
+
+.feature-art {
+    background-color: lightcyan;
+    margin:           10px;
+    height:           50px;
+    width:            40%;
+}
 
 
-/**********  Header           **********/ 
+/**********  Header           **********/
 .fixed-header {
-    background-color: fffbf7;
+    background-color: #fffbf7;
     left:             0;
     position:         fixed;
     right:            0;
@@ -56,13 +106,9 @@ p {
 }
 
 .header {
-    font-size:    0;
-    height:       45px;
-    margin:       20px 20px 0 20px;
-    /*margin-top:   40px;
-    margin-left:  20px;
-    margin-right: 20px;*/
-    
+    font-size: 0;
+    height:    45px;
+    margin:    20px 20px 0 20px;
 }
 
 .header > * {
@@ -80,6 +126,7 @@ p {
 
 .logo > img {
     height: 100%;
+    margin-top: 10px;
 }
 
 .actions {
@@ -89,38 +136,86 @@ p {
 }
 
 .actions > * {
-    margin-right: 10px;
     margin-left:  10px;
+    margin-right: 10px;
 }
-  
+
 .actions a {
-    color: #67b54b;
+    color:           #67b54b;
+    text-decoration: none;
 }
 
 .actions button {
     background-color: #67b54b;
-    border:           0;
+    border:           none;
     border-radius:    5px;
     color:            white;
-    height:           50px;
-    padding:          12px 14px;
+    font-size:        14px;
+    height:           55px;
+    padding:          15px 20px;
 }
 
-/*           Nav-menu            */
+/*           Nav-menu                  */
 .navbar {
-    color:       #025157;
-    font-weight: 500;
     text-align:  center;
     width:       70%;
 }
 
-.navbar > *{
-    margin-right: 25px;
-    margin-left:  25px;
+.navbar a {
+    color:           #025157;
+    font-weight:     500;
+    margin-right:    15px;
+    margin-left:     15px;
+    text-decoration: none;
 }
 
 
 /**********  Main-content     **********/
+.main {
+    text-align: center;
+}
+
+.main p {
+    color:         #343434;
+    font-family:   Verdana;
+    font-size:     18px;
+    line-height:   1.5;
+    margin-bottom: 30px;
+}
+
+.main input {
+    border:        1px solid #025157;
+    border-radius: 5px;
+    font-size:     14px;
+    height:        46px;
+}
+
+.main button {
+    margin-left:  -10px;
+}
+
+.main input button {
+    overflow: hidden;
+}
+
+
+/**********  Media promo      **********/
+.promo-media {
+    align-items:    center;
+    display:        flex;
+    flex-direction: column;
+    margin-bottom:  80px;
+    margin-top:     40px;
+}
+
+.promo-media .capterra img{
+    height: 1fr;
+}
+
+.promo-media .intro-group img{
+    height: 450px;
+}
+
 
 /**********  Advertising      **********/
 .promo {
@@ -131,55 +226,97 @@ p {
     width:       70%;
 }
 
-.explanatory-video {
+.promo .explanatory-video {
     align-items:    center;
     display:        flex;
-    flex:           1;
     flex-direction: column;
-    margin-right:   30px;
-}
-  
-.explanatory-video img {
-    margin-top: 10px;
-    width:      120px;
+    margin-right:   20px;
 }
 
-.advertising {
-    flex: 1;
+/*           Lado izquierdo            */
+.promo .explanatory-video img {
+    width: 150px;
 }
 
-.advertising h2 {
-    color:         #025157;
-    font-family:   "Lobster", cursive;
-    font-size:     60px;
-    line-height:   48px;
-    margin-top:    20px;
-    margin-bottom: 20px;
+/*           Lado derecho              */
+.promo .advertising p {
+    color: #343434;
 }
 
-.advertising h3 {
-    color:         #025157;
-    font-family:   "Lobster", cursive;
-    font-size:     45px;
-    line-height:   48px;
-    margin-top:    20px;
-    margin-bottom: 20px;
+.promo .advertising form p {
+    color: #8b8b8bcc;
 }
 
-.advertising > p {
-    color:         #343434;
-    font-size:     16px;
-    line-height:   1.5;
-    margin-bottom: 20px;
+.promo .advertising form input {
+    border:        1px solid #025157;
+    border-radius: 5px;
+    font-size:     14px;
+    height:        46px;
 }
 
-.advertising > form {
-    display: flex;
+.promo .advertising form button {
+    margin-left: -10px;
 }
 
-.advertising > form p {
-    color:        #025157;
-    margin-right: 18px;
+
+/**********  Features         **********/
+.features {
+    background-color: #025157;
+    display:          grid;
+    grid-template:    repeat(2, 330px) / repeat(2, 1fr);
+    padding:          5% 10%;
+}
+
+.features .subfeatures {
+    align-items:      center;
+    background-color: whitesmoke;
+    border-radius:    7px;
+    display:          flex;
+    justify-content:  space-around;
+    margin:           15px 15px;
+    overflow:         hidden;
+}
+
+.features .subfeatures .card-info {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.features .subfeatures .card-media {
+    flex:     1;
+    height:   85%;
+    position: relative;
+    right:    -50px;
+    width:    50%;
+}
+
+/*           Lado izquierdo            */
+.features .subfeatures .card-info img {
+    width: 45px;
+}
+
+.features .subfeatures .card-info h3 {
+    color:       #025157;
+    font-size:   22px;
+    font-weight: 400;
+    line-height: 1.0;
+}
+
+.features .subfeatures .card-info p {
+    color:       #969487;
+    font-size:   16px;
+}
+
+.features .subfeatures .card-info a {
+    color:           #67b54b;
+    font-size:       16px;
+    font-weight:     600;
+    text-decoration: none;
+}
+
+/*           Lado derecho              */
+.features .subfeatures .card-media img{
+    height: 100%;
 }
 
 
@@ -272,6 +409,7 @@ p {
 /*           Lado derecho              */
 .success-stories .stories .card-media figure{
     margin-top: 0;
+    margin:     0;
 }
 
 .success-stories .stories .card-media img{
@@ -282,7 +420,7 @@ p {
 }
 
 .success-stories .stories .card-media .card-logo img{
-    max-width: 75%;
+    max-width: 95%;
 }
 
 .success-stories .card-info h4 {
@@ -294,6 +432,8 @@ p {
 }
 
 .success-stories .card-info h3 {
+    color:       #343434;
+    font-family: 'Open sans', sans-serif;
     font-size:   20px;
     font-weight: 500;
     line-height: 26px;
@@ -313,5 +453,82 @@ p {
     margin:        20px 0;
     width:         200px
 }
+
+/**********  Ecommerce        **********/
+
+/**********  How it works     **********/
+.works .works-info {
+    text-align: center;
+}
+
+/*           Parte de arriba           */
+.works p {
+    color:         #46484c;
+    font-size:     18px;
+    line-height:   1.5;
+    margin-bottom: 30px;
+}
+
+.works a {
+    color:           #67b54b;
+    text-decoration: none;
+}
+
+/*           Parte de abajo            */
+.works .works-media {
+    display:       grid;
+    grid-template: repeat(1, 650px) / repeat(4, 1fr);
+    padding:       5% 10%;
+}
+
+.works .works-media .subfeatures {
+    align-items:     center;
+    border:          1px solid #8b8b8bcc;
+    border-radius:   5px;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: space-around;
+    margin:          15px 15px;
+    
+}
+
+.works .works-media .subfeatures .card-media {
+    height:   350px;
+    position: relative;
+}
+
+.works .works-media .subfeatures .card-media .card-logo {
+    display:          flex;
+    height:           25px;
+    left:             10px;
+    position:         absolute;
+    top:              10px;
+    width:            30px;    
+}
+
+.works .works-media .subfeatures .card-media img {
+    height: 100%;
+    width:  100%;
+}
+
+.works .works-media .subfeatures .card-info {
+    display:          flex;
+    flex-direction:   column;
+    height:           50%;
+    text-align:       center;
+}
+
+.works .works-media .subfeatures .card-info p {
+    font-size: 16px;
+}
+
+.works .works-media .subfeatures .card-info a {
+    font-weight: 600;
+}
+
+
+/**********  Try adver        **********/ 
+
+/**********  Try promo        **********/ 
 
 /**********  Footer           **********/ 
