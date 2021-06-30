@@ -3,17 +3,18 @@
 
 
 /**********  Generic classes  **********/ 
+/*
 * {
-    /*box-sizing: border-box;
+    box-sizing: border-box;
     margin:     0;
-    padding:    0;*/
+    padding:    0;
 }
 
 main {
-    /*margin-top: 285px;
-    text-align: center;*/
+    margin-top: 285px;
+    text-align: center;
 }
-
+*/
 body {
     background-color:         #fffbf7;
     font-family: 'Open sans', sans-serif;
@@ -532,3 +533,81 @@ p {
 /**********  Try promo        **********/ 
 
 /**********  Footer           **********/ 
+
+
+/**********  Media query      **********/ 
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .navbar,
+    .actions {
+        display: none;
+    }
+
+    h1 {
+        font-size:  36px;
+        margin-top: 90px;
+    }
+
+    .capterra > img {
+        width: 100%;
+    }
+
+    .intro-group > img {
+        width: 100%;
+    }
+
+    .publish-form > form {
+        display:        flex;
+        flex-direction: column;
+        margin:         20px 50px;
+        padding:        0.5em 1em;
+    }
+    
+    .publish-form > form > button {
+        height: 40px;
+    }
+
+    .promo {
+        flex-direction: column;
+        max-width:      90%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
+    }
+
+    .advertising {
+        margin-top: 10px;
+    }
+
+    .advertising > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding:       0 0;
+    }
+
+    .subfeatures .card-media {
+        display: none;
+    }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+} 
