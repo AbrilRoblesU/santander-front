@@ -1,0 +1,104 @@
+/** main.scss */
+@use 'global' as *;
+
+.blog {
+  background-color: $white;
+  max-width: unset;
+  padding: 5% 10%;
+
+  button {
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 12px;
+    width: 180px;
+    margin-bottom: 15px;
+  }
+
+  .title {
+    @extend %base-title;
+    font-family: "Lobster", cursive;
+    font-size: 36px;
+  }
+
+  .process-list {
+    margin-top: 40px;
+    margin-bottom: 36px;
+
+    .process {
+      display:       flex;
+      margin-bottom: 25px;
+
+      & > div {
+        & > h3 {
+          color: $dark-green-title;
+          margin-bottom: 0;
+          font-size: 30px;
+          font-weight: 500;
+        }
+        & > p {
+          color: $dark-green-text;
+          margin: 0;
+        }
+      }
+
+      .process-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        text-align: center;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .card {
+
+    .card-body {
+      color: $dark-gray;
+
+      h5 {
+        font-size: 24px;
+      }
+
+      .metadata {
+        font-size: 14px;
+        
+        .category {
+          color: $light-green;
+        }
+
+        .read-time {
+          color: $light-gray;
+        }
+      }
+
+      .card-text {
+        font-size: 18px;
+        line-height: 1.5;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .author {
+      display:     flex;
+      align-items: center;
+      margin-top:  10px;
+      
+      img {
+        border-radius: 50%;
+        height:        45px;
+        width:         45px;
+        margin-right:  15px;
+      }
+    }
+
+  }
+  
+}

@@ -1,0 +1,22 @@
+{
+  "name": "santanderfront",
+  "version": "1.0.0",
+  "description": "git init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbrilRoblesU/santander-front.git"
+  },
+  "author": "Abril Robles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbrilRoblesU/santander-front/issues"
+  },
+  "homepage": "https://github.com/AbrilRoblesU/santander-front#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}
